@@ -1,0 +1,39 @@
+alert tcp any any -> any [80, 443] (msg:"gilgil.net access"; content:"GET /"; content:"Host: "; content:"gilgil.net"; sid:10001; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"netflix.com access"; content:"GET /"; content:"Host: "; content:"netflix.com"; sid:10002; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"qt.io access"; content:"GET /"; content:"Host: "; content:"qt.io"; sid:10003; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"naver.com access"; content:"GET /"; content:"Host: "; content:"naver.com"; sid:10004; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"11st.co.kr access"; content:"GET /"; content:"Host: "; content:"11st.co.kr"; sid:10005; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"tistory.com access"; content:"GET /"; content:"Host: "; content:"tistory.com"; sid:10006; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"kitribob.wiki access"; content:"GET /"; content:"Host: "; content:"kitribob.wiki"; sid:10007; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"ottogi.co.kr access"; content:"GET /"; content:"Host: "; content:"ottogi.co.kr"; sid:10008; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"mid.ebs.co.kr access"; content:"GET /"; content:"Host: "; content:"mid.ebs.co.kr"; sid:10010; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"danawa.com access"; content:"GET /"; content:"Host: "; content:"danawa.com"; sid:10011; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"coupang.com access"; content:"GET /"; content:"Host: "; content:"coupang.com"; sid:10012; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"jandi.com access"; content:"GET /"; content:"Host: "; content:"jandi.com"; sid:10013; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"gitlab.com access"; flow:to_server, established; content:"gitlab.com"; sid: 10014; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"saramin.co.kr access"; flow:to_server, established; tls_sni; content:"saramin.co.kr"; sid:10015; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"jobkorea.co.kr access"; flow:to_server, established; tls_sni; content:"jobkorea.co.kr"; sid:10016; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"notion.so access"; flow:to_server, established; tls_sni; content:"notion.so"; sid:10017; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"melon.com access"; flow:to_server, established; tls_sni; content:"melon.com"; sid:10018; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"ggsing.com access"; flow:to_server, established; tls_sni; content:"ggsing.com"; sid:10019; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"musinsa.com access"; flow:to_server, established; tls_sni; content:"musinsa.com"; sid:10020; rev:1;)
+
+alert tcp any any -> any [80, 443] (msg:"band.us access"; flow:to_server, established; tls_sni; content:"band.us"; sid:10021; rev:1;)
